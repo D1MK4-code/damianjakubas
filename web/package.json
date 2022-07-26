@@ -15,7 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.5.1",
+    "@fontsource/nunito": "^4.5.9",
+    "@fontsource/ubuntu": "^4.5.10",
     "@mui/icons-material": "^5.8.4",
     "@portabletext/react": "^1.0.2",
     "@sanity/asset-utils": "^1.2.3",
