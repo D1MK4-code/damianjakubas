@@ -1,4 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
+import '@fontsource/ubuntu/300.css';
+import '@fontsource/ubuntu/400.css';
+import '@fontsource/ubuntu/500.css';
+import '@fontsource/ubuntu/700.css';
+import '@fontsource/nunito/600.css';
+import '@fontsource/nunito/700.css';
+import '@fontsource/nunito/800.css';
 
 const GlobalStyles = createGlobalStyle`
   *{
@@ -8,11 +15,12 @@ const GlobalStyles = createGlobalStyle`
   }
  
   html{
-    font-size: 10px;
+    font-size: 62.5%;
   }
   
   body{
     line-height: 1.4;
+	font-family: ${({ theme }) => theme.fonts.heading};
   }
 
   html, body, div, span, applet, object, iframe,
@@ -32,7 +40,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -55,6 +62,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+h1 {
+	font-size: ${({ theme }) => theme.fonts.size.l};
 }
 
 `;
