@@ -18,11 +18,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
   
-  body{
-    line-height: 1.5;
-	font-family: ${({ theme }) => theme.fonts.main};
-	padding-bottom: 11.3rem;
-  }
+ 
 
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,6 +59,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body{
+    line-height: 1.5;
+	font-family: ${({ theme }) => theme.fonts.main};
+	padding-bottom: 11.3rem;
+	position: relative;
+  }
 
 h1 {
 	font-size: ${({ theme }) => theme.fonts.size.l};
