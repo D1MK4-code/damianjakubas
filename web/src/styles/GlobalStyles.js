@@ -19,8 +19,9 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body{
-    line-height: 1.4;
-	font-family: ${({ theme }) => theme.fonts.heading};
+    line-height: 1.5;
+	font-family: ${({ theme }) => theme.fonts.main};
+	padding-bottom: 11.3rem;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -39,7 +40,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -66,6 +66,17 @@ table {
 
 h1 {
 	font-size: ${({ theme }) => theme.fonts.size.l};
+}
+
+h1,h2,h3,h4,h5,h5 {
+	font-family: ${({ theme }) => theme.fonts.heading};
+
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 `;
