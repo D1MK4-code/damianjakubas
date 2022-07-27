@@ -58,7 +58,7 @@ function Header() {
           <ul>
             {navbar.map((item) => (
               <li key={item.path}>
-                <Link to={item.path} onclick={handleNavItemClick}>
+                <Link to={item.path} onClick={handleNavItemClick}>
                   {item.title}
                 </Link>
               </li>
