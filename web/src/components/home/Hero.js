@@ -16,7 +16,7 @@ function Hero() {
             ex iusto inventore cumque distinctio culpa! Ab molestiae suscipit
             nam ex velit.
           </Paragraph>
-          <Button to="/blog">Blog</Button>
+          <Button to="/posts">Blog</Button>
         </div>
         <div className="right">
           <StaticImage

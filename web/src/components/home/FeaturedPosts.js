@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { FeaturedPostsStyles } from '../../styles/home/FeaturedPostsStyles';
 import { SectionTitle } from '../typo/Title';
 import Paragraph from '../typo/Paragraph';
-import BlogGrid from '../posts/PostsGrid';
+import PostsGrid from '../posts/PostsGrid';
 
 function FeaturedPosts() {
   const data = useStaticQuery(graphql`
@@ -44,7 +44,7 @@ function FeaturedPosts() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione
         fugit maxime temporibus ullam, ipsa sed illo voluptates nihil et!
       </Paragraph>
-      <BlogGrid posts={featuredPosts} />
+      <PostsGrid posts={featuredPosts} />
     </FeaturedPostsStyles>
   );
 }

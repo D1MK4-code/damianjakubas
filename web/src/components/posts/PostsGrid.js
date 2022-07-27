@@ -2,7 +2,7 @@ import React from 'react';
 import { PostsGridStyles } from '../../styles/posts/PostsGridStyles';
 import PostItem from './PostItem';
 
-function BlogGrid({ posts }) {
+function PostsGrid({ posts }) {
   return (
     <PostsGridStyles>
       {posts &&
@@ -23,4 +23,4 @@ function BlogGrid({ posts }) {
   );
 }
 
-export default BlogGrid;
+export default PostsGrid;
