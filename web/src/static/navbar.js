@@ -5,7 +5,7 @@ export const navbar = [
   },
   {
     title: 'Blog',
-    path: '/blog',
+    path: '/posts',
   },
   {
     title: 'Categories',
