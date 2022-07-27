@@ -36,7 +36,6 @@ function FeaturedPosts() {
   `);
 
   const featuredPosts = data.allSanityFeatured.nodes[0].posts;
-  console.log(featuredPosts);
 
   return (
     <FeaturedPostsStyles>

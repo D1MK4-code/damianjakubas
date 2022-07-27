@@ -9,14 +9,14 @@ import Paragraph from '../typo/Paragraph';
 function PostItem({ title, path, image, publishedAt, categories }) {
   return (
     <PostItemStyles>
-      <Link to={`/blogs/${path}`}>
+      <Link to={`/posts/${path}`}>
         <GatsbyImage
           image={image.imageData}
           alt={image.altText}
           className="image"
         />
       </Link>
-      <Link to={`/blogs/${path}`}>
+      <Link to={`/posts/${path}`}>
         <Title>{title}</Title>
       </Link>
       {publishedAt && (
