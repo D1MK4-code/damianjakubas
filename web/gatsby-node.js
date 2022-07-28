@@ -6,7 +6,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const singleCategoryTemplate = require.resolve(
     './src/templates/single-category.js'
   );
-
+  const categoryListTemplate = require.resolve(
+    './src/templates/category-list.js'
+  );
+  const authorListTemplate = require.resolve('./src/templates/author-list.js');
+  const singleAuthorTemplate = require.resolve(
+    './src/templates/single-author.js'
+  );
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -41,6 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) throw result.errors;
   const posts = result.data.allSanityBlog.nodes;
   const categories = result.data.allSanityCategory.nodes;
+  const authors = result.data.allSanityAuthor.nodes;
 
   // single posts pages
   posts.forEach((post) => {
@@ -60,6 +67,15 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // single authors pages
+  authors.forEach((author) => {
+    createPage({
+      path: `/authors/${author.slug.current}`,
+      component: singleAuthorTemplate,
+      context: { id: author.id },
+    });
+  });
+
   // blog-list pages
   const totalBlogListPages = Math.ceil(posts.length / postsPerPage);
   Array.from({ length: totalBlogListPages }).forEach((_, index) => {
@@ -70,6 +86,36 @@ exports.createPages = async ({ graphql, actions }) => {
         limit: postsPerPage,
         offset: index * postsPerPage,
         numberOfPages: totalBlogListPages,
+        currentPage: index + 1,
+      },
+    });
+  });
+
+  // category-list pages
+  const totalCategoryListPages = Math.ceil(categories.length / postsPerPage);
+  Array.from({ length: totalCategoryListPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? '/categories' : `/categories/${index + 1}`,
+      component: categoryListTemplate,
+      context: {
+        limit: postsPerPage,
+        offset: index * postsPerPage,
+        numberOfPages: totalCategoryListPages,
+        currentPage: index + 1,
+      },
+    });
+  });
+
+  // author-list pages
+  const totalAuthorListPages = Math.ceil(authors.length / postsPerPage);
+  Array.from({ length: totalAuthorListPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? '/authors' : `/authors/${index + 1}`,
+      component: authorListTemplate,
+      context: {
+        limit: postsPerPage,
+        offset: index * postsPerPage,
+        numberOfPages: totalAuthorListPages,
         currentPage: index + 1,
       },
     });
