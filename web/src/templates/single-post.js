@@ -62,7 +62,9 @@ function SinglePost({ data }) {
               <CategoryIcon />
               {post.categories.map((item, index) => (
                 <span key={item.slug.current}>
-                  <Link to="/categories/{item.slug.current}">{item.title}</Link>
+                  <Link to={`/categories/${item.slug.current}`}>
+                    {item.title}
+                  </Link>
                   {index < post.categories.length - 1 ? ', ' : ''}
                 </span>
               ))}
