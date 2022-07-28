@@ -3,6 +3,9 @@ exports.createPages = async ({ graphql, actions }) => {
   // template paths
   const singlePostTemplate = require.resolve('./src/templates/single-post.js');
   const blogListTemplate = require.resolve('./src/templates/blog-list.js');
+  const singleCategoryTemplate = require.resolve(
+    './src/templates/single-category.js'
+  );
 
   const { createPage } = actions;
 
@@ -37,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   if (result.errors) throw result.errors;
   const posts = result.data.allSanityBlog.nodes;
+  const categories = result.data.allSanityCategory.nodes;
 
   // single posts pages
   posts.forEach((post) => {
@@ -47,6 +51,16 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // single category pages
+  categories.forEach((category) => {
+    createPage({
+      path: `/categories/${category.slug.current}`,
+      component: singleCategoryTemplate,
+      context: { id: category.id },
+    });
+  });
+
+  // blog-list pages
   const totalBlogListPages = Math.ceil(posts.length / postsPerPage);
   Array.from({ length: totalBlogListPages }).forEach((_, index) => {
     createPage({
