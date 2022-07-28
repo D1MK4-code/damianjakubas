@@ -1,7 +1,12 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 function Logo() {
-  return <span to="/">Damian Jakubas</span>;
+  return (
+    <Link to="/" className="logo">
+      DJ
+    </Link>
+  );
 }
 
 export default Logo;

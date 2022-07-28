@@ -5,7 +5,7 @@ import { ButtonStyles } from '../../styles/buttons/ButtonStyles';
 function Button({ children, tag, variant = buttonTypes.primary, ...props }) {
   return (
     <ButtonStyles as={tag} {...props} variant={variant}>
-      {children}
+      <span>{children}</span>
     </ButtonStyles>
   );
 }

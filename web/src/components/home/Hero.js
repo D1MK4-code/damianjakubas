@@ -9,24 +9,45 @@ function Hero() {
     <HeroStyles>
       <div className="container">
         <div className="left">
-          <h1>Web Developer</h1>
-          <Paragraph>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
-            maiores, pariatur soluta aut aspernatur saepe vel deserunt, sapiente
-            ex iusto inventore cumque distinctio culpa! Ab molestiae suscipit
-            nam ex velit.
-          </Paragraph>
-          <Button to="/posts">Blog</Button>
-        </div>
-        <div className="right">
+          <StaticImage
+            className="hero-pattern-1"
+            src="../../images/hero-pattern-big.svg"
+            alt="hero pattern"
+            placeholder="none"
+            objectFit="contain"
+            objectPosition="0% 0%"
+          />
           <StaticImage
             className="hero-image"
-            src="../../images/hero.jpg"
+            src="../../images/hero.png"
             alt="hero image"
             placeholder="none"
             objectPosition="50% 50%"
           />
         </div>
+        <div className="right">
+          <h1>
+            Hello 🖐️ <br /> I'm Damian!
+          </h1>
+          <Paragraph className="hero-text">
+            I'm Front-end Developer, <br />
+            working at{' '}
+            <a href="https://otree.tech/" target="_blank" rel="noreferrer">
+              OTree.tech
+            </a>{' '}
+            from October 2020 <br /> (almost 2 years now). <br />
+            Currently learning React
+          </Paragraph>
+          <Button to="/posts">Blog posts</Button>
+        </div>
+        <StaticImage
+          className="hero-pattern-2"
+          src="../../images/hero-pattern.svg"
+          alt="hero pattern"
+          placeholder="none"
+          objectFit="contain"
+          objectPosition="50% 50%"
+        />
       </div>
     </HeroStyles>
   );
