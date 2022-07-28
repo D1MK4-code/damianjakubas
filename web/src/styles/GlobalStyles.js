@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import '@fontsource/ubuntu/300.css';
-import '@fontsource/ubuntu/400.css';
-import '@fontsource/ubuntu/500.css';
-import '@fontsource/ubuntu/700.css';
-import '@fontsource/nunito/600.css';
-import '@fontsource/nunito/700.css';
-import '@fontsource/nunito/800.css';
+import '@fontsource/dm-sans/400.css';
+import '@fontsource/dm-sans/500.css';
+import '@fontsource/dm-sans/700.css';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/500.css';
+import '@fontsource/playfair-display/600.css';
+import '@fontsource/playfair-display/700.css';
 
 const GlobalStyles = createGlobalStyle`
   *{

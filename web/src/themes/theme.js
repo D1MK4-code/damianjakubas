@@ -1,7 +1,7 @@
 export default {
   fonts: {
-    main: 'Ubuntu, sans-serif',
-    heading: 'Nunito, sans-serif',
+    main: 'DM Sans',
+    heading: 'Playfair Display',
     size: {
       xxs: '1rem',
       xs: '1.2rem',
