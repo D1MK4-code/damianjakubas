@@ -1,11 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import '@fontsource/dm-sans/400.css';
-import '@fontsource/dm-sans/500.css';
-import '@fontsource/dm-sans/700.css';
-import '@fontsource/playfair-display/400.css';
-import '@fontsource/playfair-display/500.css';
-import '@fontsource/playfair-display/600.css';
-import '@fontsource/playfair-display/700.css';
 
 const GlobalStyles = createGlobalStyle`
   *{
@@ -62,17 +55,17 @@ table {
 
 body{
     line-height: 1.5;
-	font-family: ${({ theme }) => theme.fonts.main};
+	font-family: 'DM Sans';
 	padding-bottom: 11.3rem;
 	position: relative;
   }
 
 h1 {
-	font-size: ${({ theme }) => theme.fonts.size.l};
+	font-size: 3rem;
 }
 
 h1,h2,h3,h4,h5,h5 {
-	font-family: ${({ theme }) => theme.fonts.heading};
+	font-family: 'Playfair Display';
 
 }
 
