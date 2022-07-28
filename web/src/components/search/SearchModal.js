@@ -95,19 +95,19 @@ function Search() {
   return (
     <SearchModalStyles>
       <div className="modal-container">
-        <ActionButton className="close-btn" onClick={() => closeSearchModal()}>
-          <CloseIcon />
-        </ActionButton>
         <SearchInput
           value={searchQuery}
           setValue={setSearchQuery}
           onFocus={handleOnFocus}
         />
+        <ActionButton className="close-btn" onClick={() => closeSearchModal()}>
+          <CloseIcon />
+        </ActionButton>
         {searchQuery &&
           blogsIndexStore &&
           categoriesIndexStore &&
           authorsIndexStore && (
-            <div className="search__result">
+            <div className="search-result">
               <SearchResult
                 searchQuery={searchQuery}
                 blogsIndexStore={blogsIndexStore}
