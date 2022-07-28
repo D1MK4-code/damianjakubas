@@ -9,7 +9,7 @@ export const ButtonStyles = styled(Link)`
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  font-size: ${({ theme }) => theme.fonts.size.s};
+  font-size: 1.4rem;
   background: ${({ variant }) =>
     variant === buttonTypes.primary
       ? '#000'

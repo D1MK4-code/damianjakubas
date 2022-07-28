@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 export const AuthorItemStyles = styled(Link)`
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: #000;
   border-radius: 8px;
   padding: 1.5rem;
   gap: 1rem;

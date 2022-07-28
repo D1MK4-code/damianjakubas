@@ -21,7 +21,7 @@ export default styled.header`
     height: 100vh;
     transform: translateX(100%);
     transition: all 0.25s ease-in-out;
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: #fff;
     z-index: 1;
     .mobile-close-btn {
       position: absolute;
