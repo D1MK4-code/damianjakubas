@@ -11,6 +11,7 @@ import iconBs from '../../images/icon-bootstrap.svg';
 import iconReact from '../../images/icon-react.svg';
 import iconGatsby from '../../images/icon-gatsby.svg';
 import iconNext from '../../images/icon-next.svg';
+import iconGsap from '../../images/icon-gsap.svg';
 
 function Skills() {
   return (
@@ -98,6 +99,14 @@ function Skills() {
               src={iconNext}
               alt="Next.js logo"
               className="skill-img large"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconGsap}
+              alt="GSAP3 logo"
+              className="skill-img"
               loading="lazy"
             />
           </figure>

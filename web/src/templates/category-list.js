@@ -32,11 +32,11 @@ function Categories({ data, pageContext }) {
   return (
     <>
       <SEO title="Categories" />
-      <PageSpace top={80} bottom={100}>
+      <PageSpace top={100} bottom={80}>
         <div className="container">
           <PageHeader
             title="All Categories"
-            description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
+            description="On this page you can explore all categories."
           />
           <CategoryGrid categories={categories} />
           {numberOfPages > 1 && (

@@ -21,7 +21,9 @@ function Footer() {
         <ul className="footer-socials">
           {socials.map((item) => (
             <li key={item.name}>
-              <a href={item.url}>{item.icon}</a>
+              <a href={item.url} target="_blank" rel="noreferrer">
+                {item.icon}
+              </a>
             </li>
           ))}
         </ul>

@@ -49,16 +49,21 @@ function SingleCategory({ data }) {
   const category = data.sanityCategory;
   const posts = data.allSanityBlog.nodes;
   return (
-    <PageSpace top={80} bottom={100}>
+    <PageSpace top={100} bottom={80}>
       <SingleCategoryStyles>
         <div className="container">
           <SEO title={category.title} />
-          <PageHeader title={category.title} className="pageHeader">
+          <PageHeader
+            title={category.title}
+            className="page-header single-category-header"
+          >
             <PortableTextComponent value={category._rawDescription} />
             <GatsbyImage
               image={category.coverImage.asset.gatsbyImageData}
-              className="coverImage"
+              className="cover-image"
               alt={category.coverImage.alt}
+              objectFit="cover"
+              objectPosition="50% 50%"
             />
           </PageHeader>
           <PostsGrid posts={posts} />
