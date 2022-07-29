@@ -40,4 +40,9 @@ export const PostItemStyles = styled.div`
       font-size: 1.4rem;
     }
   }
+  @media (min-width: 1100px) {
+    img {
+      height: 33.5rem;
+    }
+  }
 `;

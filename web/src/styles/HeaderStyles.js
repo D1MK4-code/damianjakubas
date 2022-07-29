@@ -44,6 +44,7 @@ export default styled.header`
       width: 2.5rem;
       height: 2.5rem;
       transition: all 0.1s ease-in-out;
+      fill: var(--black);
       &:hover {
         fill: var(--button);
       }

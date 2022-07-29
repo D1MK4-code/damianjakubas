@@ -71,6 +71,7 @@ body{
 	padding-bottom: 19rem;
 	position: relative;
 	background: var(--white);
+	min-height: 100vh;
   }
 
 

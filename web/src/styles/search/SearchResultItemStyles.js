@@ -15,7 +15,7 @@ export const SearchResultItemStyles = styled(Link)`
   font-weight: 500;
   margin-bottom: 1.5rem;
   font-family: 'DM Sans';
-  h3 {
+  h4 {
     margin: 0;
     text-align: left;
     font-size: 1.4rem;
@@ -23,7 +23,7 @@ export const SearchResultItemStyles = styled(Link)`
     font-weight: 700;
   }
   div {
-    h3 {
+    h4 {
       margin: 0 0 0.2rem 0;
     }
   }

@@ -19,7 +19,7 @@ export const SearchModalStyles = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2.5rem;
+    padding: 2rem;
     background-color: var(--white);
     box-shadow: 4px 4px 24px -5px rgba(66, 68, 90, 1);
     label,
