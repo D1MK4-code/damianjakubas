@@ -26,13 +26,13 @@ function TopCategories() {
 
   return (
     <TopCategoriesStyles>
-      <SectionTitle>Top Categories</SectionTitle>
-      <Paragraph className="info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-        facilis. Porro reiciendis eaque vel, eos corrupti velit quisquam sequi
-        laborum alias nam nostrum et magnam aut cupiditate ipsam, ab quod.
-      </Paragraph>
-      <CategoryGrid categories={categories} />
+      <div className="container">
+        <SectionTitle>Top Categories</SectionTitle>
+        <Paragraph className="info">
+          Explore the categories containing the most posts.
+        </Paragraph>
+        <CategoryGrid categories={categories} />
+      </div>
     </TopCategoriesStyles>
   );
 }

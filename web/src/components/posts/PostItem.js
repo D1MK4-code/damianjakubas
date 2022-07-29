@@ -14,6 +14,9 @@ function PostItem({ title, path, image, publishedAt, categories }) {
           image={image.imageData}
           alt={image.altText}
           className="image"
+          objectFit="cover"
+          loading="lazy"
+          objectPosition="50% 50%"
         />
       </Link>
       <Link to={`/posts/${path}`}>

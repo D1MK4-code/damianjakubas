@@ -4,6 +4,7 @@ import { FeaturedPostsStyles } from '../../styles/home/FeaturedPostsStyles';
 import { SectionTitle } from '../typo/Title';
 import Paragraph from '../typo/Paragraph';
 import PostsGrid from '../posts/PostsGrid';
+import heroPattern from '../../images/hero-pattern.svg';
 
 function FeaturedPosts() {
   const data = useStaticQuery(graphql`
@@ -39,12 +40,21 @@ function FeaturedPosts() {
 
   return (
     <FeaturedPostsStyles>
-      <SectionTitle>FeaturedPosts</SectionTitle>
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione
-        fugit maxime temporibus ullam, ipsa sed illo voluptates nihil et!
-      </Paragraph>
-      <PostsGrid posts={featuredPosts} />
+      <div className="container">
+        <figure>
+          <img
+            src={heroPattern}
+            alt="hero pattern"
+            className="hero-pattern-2"
+          />
+        </figure>
+        <SectionTitle>Recent Posts</SectionTitle>
+        <Paragraph className="info">
+          Some recent posts, I'm currently writing about JavaScript and its
+          features.
+        </Paragraph>
+        <PostsGrid posts={featuredPosts} />
+      </div>
     </FeaturedPostsStyles>
   );
 }
