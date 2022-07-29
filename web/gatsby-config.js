@@ -9,6 +9,7 @@ module.exports = {
     description: `Blog poświęcony tematyce Web Developmentu oraz prywatne portfolio`,
   },
   plugins: [
+    'gatsby-plugin-preload-fonts',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',

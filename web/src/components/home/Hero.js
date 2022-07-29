@@ -3,20 +3,21 @@ import { StaticImage } from 'gatsby-plugin-image';
 import HeroStyles from '../../styles/home/HeroStyles';
 import Button from '../buttons/Button';
 import Paragraph from '../typo/Paragraph';
+import heroPattern from '../../images/hero-pattern.svg';
+import heroPatternBig from '../../images/hero-pattern-big.svg';
 
 function Hero() {
   return (
     <HeroStyles>
       <div className="container">
         <div className="left">
-          <StaticImage
-            className="hero-pattern-1"
-            src="../../images/hero-pattern-big.svg"
-            alt="hero pattern"
-            placeholder="none"
-            objectFit="contain"
-            objectPosition="0% 0%"
-          />
+          <figure>
+            <img
+              src={heroPatternBig}
+              alt="hero pattern"
+              className="hero-pattern-1"
+            />
+          </figure>
           <StaticImage
             className="hero-image"
             src="../../images/hero.png"
@@ -40,14 +41,13 @@ function Hero() {
           </Paragraph>
           <Button to="/posts">Blog posts</Button>
         </div>
-        <StaticImage
-          className="hero-pattern-2"
-          src="../../images/hero-pattern.svg"
-          alt="hero pattern"
-          placeholder="none"
-          objectFit="contain"
-          objectPosition="50% 50%"
-        />
+        <figure>
+          <img
+            src={heroPattern}
+            alt="hero pattern"
+            className="hero-pattern-2"
+          />
+        </figure>
       </div>
     </HeroStyles>
   );
