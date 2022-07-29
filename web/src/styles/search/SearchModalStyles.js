@@ -21,8 +21,6 @@ export const SearchModalStyles = styled.div`
     align-items: center;
     padding: 2.5rem;
     background-color: var(--white);
-    -webkit-box-shadow: 4px 4px 24px -5px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 4px 4px 24px -5px rgba(66, 68, 90, 1);
     box-shadow: 4px 4px 24px -5px rgba(66, 68, 90, 1);
     label,
     input {

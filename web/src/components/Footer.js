@@ -14,7 +14,7 @@ function Footer() {
         <ul className="footer-nav">
           {navbar.map((item) => (
             <li key={item.path}>
-              <Link ty={item.path}>{item.title}</Link>
+              <Link to={item.path}>{item.title}</Link>
             </li>
           ))}
         </ul>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SkillsStyles = styled.div`
-  padding: 6rem 0;
+  padding: 6rem 0 3rem;
   display: flex;
   flex-wrap: wrap;
   h3 {
@@ -26,6 +26,11 @@ export const SkillsStyles = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    h3 {
+      &:before {
+        max-width: 11rem;
+      }
+    }
     .single-job {
       width: 100%;
       display: flex;
@@ -73,12 +78,12 @@ export const SkillsStyles = styled.div`
     }
   }
   @media (min-width: 992px) {
-    padding: 8rem 0;
+    padding: 8rem 0 4rem;
     .basic {
       font-size: 2rem;
     }
     h3 {
-      font-size: 3.5rem;
+      font-size: 4rem;
     }
     .year {
       font-size: 1.6rem;

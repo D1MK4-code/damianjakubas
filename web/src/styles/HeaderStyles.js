@@ -141,7 +141,7 @@ export default styled.header`
         align-items: center;
         padding: 0;
         li {
-          padding: 0 1rem;
+          padding: 0 1.25rem;
         }
         a {
           text-decoration: none;

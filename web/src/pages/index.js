@@ -11,9 +11,9 @@ const IndexPage = () => (
     <Hero />
     <div className="container">
       <Skills />
-      <FeaturedPosts />
-      <TopCategories />
     </div>
+    <FeaturedPosts />
+    <TopCategories />
   </>
 );
 

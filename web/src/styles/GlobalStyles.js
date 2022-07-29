@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 	--white: #fff;
 	--black: #000;
 	--light: #fbfaff;
+	--light-secondary: #efecfc;
 	--search: #eaeaed;
   }
  
@@ -67,17 +68,30 @@ table {
 body{
     line-height: 1.5;
 	font-family: 'DM Sans';
-	padding-bottom: 11.3rem;
+	padding-bottom: 19rem;
 	position: relative;
 	background: var(--white);
   }
 
 
-h1,h2,h3,h4,h5,h5 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: 'Playfair Display';
 	color: var(--primary);
 	line-height: 1.3em;
 	margin-bottom: 2rem;
+	letter-spacing: 0.05rem;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -10%;
+		left: -1.5rem;
+		height: 115%;
+		width: 100%;
+		max-width: 6rem;
+		background: var(--button-light);
+		z-index: -1;
+	}
 }
 
 .container {
@@ -88,7 +102,7 @@ h1,h2,h3,h4,h5,h5 {
 
 .logo {
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	color: var(--black);
 	font-family: 'Playfair Display';
 	text-decoration: none;
@@ -110,7 +124,13 @@ a {
 	display: none;
   }
 
-  @media(min-width: 992px) {
+@media(min-width: 992px) {
+	h1,h2,h3,h4,h5,h6 {
+		&:before {
+			left: -2rem;
+			max-width: 8rem;
+		}
+	}
 	.left,
     .right {
       width: 50%;
@@ -122,7 +142,6 @@ a {
       padding-left: 1.5rem;
     }
   }
-
 `;
 
 export default GlobalStyles;

@@ -47,6 +47,9 @@ export default styled.section`
   h1 {
     line-height: 1.1em;
     font-size: 4rem;
+    &:before {
+      display: none;
+    }
   }
 
   .hero-text {
