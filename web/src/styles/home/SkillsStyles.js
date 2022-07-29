@@ -49,6 +49,14 @@ export const SkillsStyles = styled.div`
       }
     }
   }
+  .skill-img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    &.large {
+      width: 8rem;
+    }
+  }
   @media (min-width: 768px) {
     .left,
     .right {

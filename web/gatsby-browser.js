@@ -8,6 +8,6 @@ import '@fontsource/playfair-display/500.css';
 import '@fontsource/playfair-display/600.css';
 import '@fontsource/playfair-display/700.css';
 
-export const wrapRootElement = ({ element, props }) => (
+export const wrapPageElement = ({ element, props }) => (
   <Layout {...props}>{element}</Layout>
 );

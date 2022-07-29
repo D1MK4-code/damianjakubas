@@ -1,7 +1,16 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { SkillsStyles } from '../../styles/home/SkillsStyles';
 import { SectionTitle } from '../typo/Title';
+import iconHtml from '../../images/icon-html.svg';
+import iconCss from '../../images/icon-css.svg';
+import iconSass from '../../images/icon-sass.svg';
+import iconJs from '../../images/icon-javascript.svg';
+import iconJquery from '../../images/icon-jquery.svg';
+import iconWp from '../../images/icon-wordpress.svg';
+import iconBs from '../../images/icon-bootstrap.svg';
+import iconReact from '../../images/icon-react.svg';
+import iconGatsby from '../../images/icon-gatsby.svg';
+import iconNext from '../../images/icon-next.svg';
 
 function Skills() {
   return (
@@ -9,109 +18,89 @@ function Skills() {
       <div className="left">
         <SectionTitle>Skills</SectionTitle>
         <div className="skills-wrapper">
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-html.svg"
-            alt="html logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-css.svg"
-            alt="css logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-sass.svg"
-            alt="sass logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-javascript.svg"
-            alt="javascript logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-jquery.svg"
-            alt="jquery logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-wordpress.svg"
-            alt="wordpress logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-bootstrap.svg"
-            alt="bootstrap logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
+          <figure>
+            <img
+              src={iconHtml}
+              alt="HTML logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconCss}
+              alt="CSS logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconSass}
+              alt="SASS logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconJs}
+              alt="JS logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconJquery}
+              alt="jQuery logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconWp}
+              alt="Wordpress logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconBs}
+              alt="Bootstrap logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
         </div>
         <p className="basic">Basic Experience:</p>
         <div className="skills-wrapper">
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-react.svg"
-            alt="react logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-gatsby.svg"
-            alt="gatsby logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={40}
-            height={40}
-          />
-          <StaticImage
-            className="skill-img"
-            src="../../images/icon-next.svg"
-            alt="next logo"
-            placeholder="none"
-            objectPosition="50% 50%"
-            layout="fixed"
-            width={80}
-            height={40}
-          />
+          <figure>
+            <img
+              src={iconReact}
+              alt="React.js logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconGatsby}
+              alt="Gatsby.js logo"
+              className="skill-img"
+              loading="lazy"
+            />
+          </figure>
+          <figure>
+            <img
+              src={iconNext}
+              alt="Next.js logo"
+              className="skill-img large"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </div>
       <div className="right">
