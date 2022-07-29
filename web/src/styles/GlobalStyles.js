@@ -106,6 +106,10 @@ a {
     width: 100%;
   }
 
+  #disqus_thread #reactions {
+	display: none;
+  }
+
   @media(min-width: 992px) {
 	.left,
     .right {

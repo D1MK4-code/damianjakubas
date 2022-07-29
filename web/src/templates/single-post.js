@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import CategoryIcon from '@mui/icons-material/Category';
 import PersonIcon from '@mui/icons-material/Person';
+import { DiscussionEmbed } from 'disqus-react';
 import { SinglePostStyles } from '../styles/posts/SinglePostStyles';
 import SEO from '../Seo/SEO';
 import PageSpace from '../components/PageSpace';
@@ -18,6 +19,9 @@ export const postQuery = graphql`
       title
       publishedAt
       _rawBody
+      slug {
+        current
+      }
       coverImage {
         asset {
           gatsbyImageData
@@ -42,6 +46,19 @@ export const postQuery = graphql`
 
 function SinglePost({ data }) {
   const post = data.sanityBlog;
+  console.log(post);
+
+  const baseUrl = 'https://damianjakubas.vercel.app/posts/';
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: {
+      url: baseUrl + post.slug.current,
+      identifier: post.title,
+      title: post.title,
+    },
+  };
+
   return (
     <SinglePostStyles>
       <SEO title={post.title} />
@@ -79,6 +96,7 @@ function SinglePost({ data }) {
           <div className="post-body">
             <PortableTextComponent value={post._rawBody} />
           </div>
+          <DiscussionEmbed {...disqusConfig} />
         </div>
       </PageSpace>
     </SinglePostStyles>
