@@ -4,6 +4,7 @@ export default styled.section`
   padding: 7rem 0 0;
   background: var(--light);
   .container {
+    min-height: 62.5rem;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -71,6 +72,7 @@ export default styled.section`
     }
 
     .container {
+      min-height: 50rem;
       .hero-pattern-2 {
         width: 300px;
         height: 330px;
