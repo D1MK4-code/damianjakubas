@@ -36,7 +36,7 @@ function AuthorList({ data, pageContext }) {
       <div className="container">
         <PageHeader
           title="All Authors"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quod expedita hic ullam labore consequatur repudiandae a quam et possimus."
+          description="All authors are displayed on this page, currently I am basically the only one here :D"
         />
         <AuthorGrid authors={authors} />
         {numberOfPages > 1 && (

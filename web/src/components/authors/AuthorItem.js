@@ -9,7 +9,8 @@ function AuthorItem({ profileImage, name, slug }) {
       <GatsbyImage
         image={profileImage.asset.gatsbyImageData}
         alt={profileImage.asset.alt}
-        className="profileImage"
+        className="profile-image"
+        ObjectPosition="50% 40%"
       />
       <Title>{name}</Title>
     </AuthorItemStyles>
