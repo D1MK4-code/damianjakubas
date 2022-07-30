@@ -9,7 +9,7 @@ import { DiscussionEmbed } from 'disqus-react';
 import { SinglePostStyles } from '../styles/posts/SinglePostStyles';
 import SEO from '../Seo/SEO';
 import PageSpace from '../components/PageSpace';
-import { Title } from '../components/typo/Title';
+import { MainTitle } from '../components/typo/Title';
 import Paragraph from '../components/typo/Paragraph';
 import PortableTextComponent from '../components/PortableTextComponent';
 
@@ -70,7 +70,7 @@ function SinglePost({ data }) {
               alt="post.coverImage.alt"
               className="post-image"
             />
-            <Title className="post-title">{post.title}</Title>
+            <MainTitle className="post-title">{post.title}</MainTitle>
             <Paragraph className="published-at">
               <CalendarTodayIcon />
               {format(new Date(post.publishedAt), 'MMM dd yyyy')}

@@ -15,16 +15,14 @@ export const SingleAuthorStyles = styled.div`
     border-radius: 50%;
     margin-bottom: 2rem;
   }
-  .name {
-    margin-bottom: 1rem;
-  }
+
   .bio {
     margin: 0 auto 4rem;
     max-width: 500px;
   }
   h4 {
     font-size: 1.8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-family: 'DM Sans';
     &:before {
       display: none;
