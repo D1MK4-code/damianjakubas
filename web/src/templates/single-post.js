@@ -62,7 +62,7 @@ function SinglePost({ data }) {
   return (
     <SinglePostStyles>
       <SEO title={post.title} />
-      <PageSpace top={80} bottom={100}>
+      <PageSpace top={100} bottom={100}>
         <div className="container">
           <div className="post-header">
             <GatsbyImage

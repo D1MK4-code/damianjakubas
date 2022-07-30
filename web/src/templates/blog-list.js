@@ -43,11 +43,11 @@ function BlogList({ data, pageContext }) {
   return (
     <>
       <SEO title="posts" />
-      <PageSpace top={80} bottom={100}>
+      <PageSpace top={100} bottom={80}>
         <div className="container">
           <PageHeader
             title="All Blog Posts"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cumque veritatis asperiores enim reiciendis vero error inventore quis soluta explicabo?"
+            description="Hello, welcome to my blog. My name is Damian, and I'll be writing mostly about JavaScript, with React in the future as well."
           />
           <PostsGrid posts={posts} />
           {numberOfPages > 1 && (

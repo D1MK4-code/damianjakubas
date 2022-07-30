@@ -50,7 +50,7 @@ function SingleAuthor({ data }) {
   const posts = data.allSanityBlog.nodes;
 
   return (
-    <PageSpace top={80} bottom={100}>
+    <PageSpace top={100} bottom={80}>
       <SEO title={author.name} />
       <div className="container">
         <SingleAuthorStyles>
@@ -59,6 +59,7 @@ function SingleAuthor({ data }) {
               image={author.profileImage.asset.gatsbyImageData}
               alt="author.profileImage.alt"
               className="profileImage"
+              objectPosition="50% 40%"
             />
             <Title className="name">{author.name}</Title>
             <div className="bio">
