@@ -58,7 +58,7 @@ export const SinglePostStyles = styled.div`
   a,
   li,
   span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: var(--primary);
     line-height: 1.6em;
@@ -77,16 +77,13 @@ export const SinglePostStyles = styled.div`
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
   h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
   }
   h2,
   h3,
@@ -133,22 +130,13 @@ export const SinglePostStyles = styled.div`
       margin-bottom: 2.5rem;
     }
     h1 {
-      font-size: 2.7rem;
+      font-size: 2.8rem;
     }
     h2 {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
     h3 {
-      font-size: 2.2rem;
-    }
-    h4 {
-      font-size: 2.1rem;
-    }
-    p,
-    a,
-    li,
-    span {
-      font-size: 1.6rem;
+      font-size: 2.4rem;
     }
   }
 `;
