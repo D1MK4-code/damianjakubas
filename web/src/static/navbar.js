@@ -4,11 +4,15 @@ export const navbar = [
     path: '/',
   },
   {
-    title: 'Blog',
-    path: '/posts',
-  },
-  {
     title: 'Categories',
     path: '/categories',
+  },
+  {
+    title: 'Projects',
+    path: '/projects',
+  },
+  {
+    title: 'Blog',
+    path: '/posts',
   },
 ];
