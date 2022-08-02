@@ -67,7 +67,7 @@ function SinglePost({ data }) {
           <div className="post-header">
             <GatsbyImage
               image={post.coverImage.asset.gatsbyImageData}
-              alt="post.coverImage.alt"
+              alt={post.coverImage.alt}
               className="post-image"
             />
             <MainTitle className="post-title">{post.title}</MainTitle>

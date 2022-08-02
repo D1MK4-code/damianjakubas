@@ -14,6 +14,7 @@ import blog from './documents/blog';
 import author from './documents/author';
 import category from './documents/category';
 import featured from './documents/featured';
+import project from './documents/project';
 
 export default createSchema({
   name: 'default',
@@ -29,5 +30,6 @@ export default createSchema({
     author,
     category,
     featured,
+    project,
   ]),
 });

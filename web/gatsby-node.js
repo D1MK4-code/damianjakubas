@@ -2,7 +2,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const postsPerPage = parseInt(process.env.GATSBY_POST_PER_PAGE) || 10;
   // template paths
   const singlePostTemplate = require.resolve('./src/templates/single-post.js');
+  const singleProjectTemplate = require.resolve(
+    './src/templates/single-project.js'
+  );
   const blogListTemplate = require.resolve('./src/templates/blog-list.js');
+  const projectListTemplate = require.resolve(
+    './src/templates/project-list.js'
+  );
   const singleCategoryTemplate = require.resolve(
     './src/templates/single-category.js'
   );
@@ -18,6 +24,14 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     {
       allSanityBlog {
+        nodes {
+          id
+          slug {
+            current
+          }
+        }
+      }
+      allSanityProject {
         nodes {
           id
           slug {
@@ -46,6 +60,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   if (result.errors) throw result.errors;
   const posts = result.data.allSanityBlog.nodes;
+  const projects = result.data.allSanityProject.nodes;
   const categories = result.data.allSanityCategory.nodes;
   const authors = result.data.allSanityAuthor.nodes;
 
@@ -55,6 +70,15 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/posts/${post.slug.current}`,
       component: singlePostTemplate,
       context: { id: post.id },
+    });
+  });
+
+  // single projects pages
+  projects.forEach((project) => {
+    createPage({
+      path: `/projects/${project.slug.current}`,
+      component: singleProjectTemplate,
+      context: { id: project.id },
     });
   });
 
@@ -86,6 +110,21 @@ exports.createPages = async ({ graphql, actions }) => {
         limit: postsPerPage,
         offset: index * postsPerPage,
         numberOfPages: totalBlogListPages,
+        currentPage: index + 1,
+      },
+    });
+  });
+
+  // project-list pages
+  const totalProjectListPages = Math.ceil(projects.length / postsPerPage);
+  Array.from({ length: totalProjectListPages }).forEach((_, index) => {
+    createPage({
+      path: index === 0 ? '/projects' : `/projects/${index + 1}`,
+      component: projectListTemplate,
+      context: {
+        limit: postsPerPage,
+        offset: index * postsPerPage,
+        numberOfPages: totalProjectListPages,
         currentPage: index + 1,
       },
     });
