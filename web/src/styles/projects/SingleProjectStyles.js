@@ -56,8 +56,7 @@ export const SingleProjectStyles = styled.div`
   }
   p,
   a,
-  li,
-  span {
+  li{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--primary);
