@@ -15,7 +15,7 @@ export const CategoryItemStyles = styled.div`
     font-size: 1.3rem;
   }
   @media (min-width: 576px) {
-    max-width: 50%;
+    min-width: 50%;
   }
   @media (min-width: 991px) {
     h4 {
