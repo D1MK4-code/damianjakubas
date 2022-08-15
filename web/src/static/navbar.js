@@ -7,10 +7,10 @@ export const navbar = [
     title: 'Categories',
     path: '/categories',
   },
-  {
+  /*{
     title: 'Projects',
     path: '/projects',
-  },
+  }, */
   {
     title: 'Blog',
     path: '/posts',
