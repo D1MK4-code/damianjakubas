@@ -19,6 +19,9 @@ export const SingleCategoryStyles = styled.div`
     }
     &.single-category-header {
       margin-bottom: 2rem;
+      h3 {
+        max-width: calc(100% - 8rem);
+      }
     }
   }
 
@@ -29,6 +32,11 @@ export const SingleCategoryStyles = styled.div`
         width: 200px;
         height: 100%;
       }
+      &.single-category-header {
+      h3 {
+        max-width: calc(100% - 2rem);
+      }
+    }
     }
   }
   @media (min-width: 768px) {
@@ -38,6 +46,9 @@ export const SingleCategoryStyles = styled.div`
       }
       &.single-category-header {
         margin-bottom: 3rem;
+        h3 {
+        max-width: 100%;
+      }
       }
     }
   }
