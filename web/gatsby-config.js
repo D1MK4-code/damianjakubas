@@ -5,7 +5,7 @@ require('dotenv').config('./.env');
 module.exports = {
   siteMetadata: {
     title: `Damian Jakubas`,
-    siteUrl: `https://damian-jakubas.netlify.com`,
+    siteUrl: `https://damian-jakubas.com`,
     description: `Blog poświęcony tematyce Web Developmentu oraz prywatne portfolio`,
   },
   plugins: [
@@ -19,6 +19,12 @@ module.exports = {
       resolve: 'gatsby-source-sanity',
       options: {
         ...sanityConfig,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
       },
     },
     {

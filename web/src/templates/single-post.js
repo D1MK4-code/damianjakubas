@@ -48,7 +48,7 @@ function SinglePost({ data }) {
   const post = data.sanityBlog;
   console.log(post);
 
-  const baseUrl = 'https://damianjakubas.vercel.app/posts/';
+  const baseUrl = 'https://damianjakubas.com/posts/';
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
