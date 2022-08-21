@@ -22,7 +22,7 @@ function SEO({ title, description }) {
   };
 
   return (
-    <Helmet>
+    <Helmet  htmlAttributes={{lang: 'en',}}> 
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
     </Helmet>

@@ -22,9 +22,11 @@ function Footer() {
           {socials.map((item) => (
             <li key={item.name}>
               <a href={item.url} target="_blank" rel="noreferrer">
-                {item.icon}
+                {item.icon} 
+                <span>{item.name}</span>
               </a>
             </li>
+
           ))}
         </ul>
         <Paragraph>© Damian Jakubas {new Date().getFullYear()}</Paragraph>
