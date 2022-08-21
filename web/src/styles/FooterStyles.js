@@ -31,19 +31,17 @@ export default styled.footer`
   }
 
   .footer-socials {
-    a {
+li {
+  a {
       width: 3rem;
       height: 3rem;
       display: block;
+      font-size: 0;
       svg {
         width: 3rem;
         height: 3rem;
       }
-      span {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-      }
     }
+}
   }
 `;
