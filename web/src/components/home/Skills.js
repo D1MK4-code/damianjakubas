@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkillsStyles } from '../../styles/home/SkillsStyles';
-import { SectionTitle } from '../typo/Title';
+import { SectionTitle, SecondTitle } from '../typo/Title';
 import iconHtml from '../../images/icon-html.svg';
 import iconCss from '../../images/icon-css.svg';
 import iconSass from '../../images/icon-sass.svg';
@@ -17,7 +17,7 @@ function Skills() {
   return (
     <SkillsStyles>
       <div className="left">
-        <SectionTitle>Skills</SectionTitle>
+        <SecondTitle>Skills</SecondTitle>
         <div className="skills-wrapper">
           <figure>
             <img

@@ -22,8 +22,7 @@ function Footer() {
           {socials.map((item) => (
             <li key={item.name}>
               <a href={item.url} target="_blank" rel="noreferrer">
-                {item.icon} 
-                <span>{item.name}</span>
+                {item.icon} {item.name}
               </a>
             </li>
 
