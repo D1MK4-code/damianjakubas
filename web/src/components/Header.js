@@ -36,6 +36,7 @@ function Header() {
             onKeyDown={handleSearchModalOpen}
             role="button"
             tabIndex={0}
+            aria-label="Toggle blue light"
           >
             <SearchIcon />
           </div>
@@ -43,6 +44,7 @@ function Header() {
             className="mobile-button"
             onClick={() => setNavOpen(true)}
             onKeyDown={() => setNavOpen(true)}
+            aria-label="Toggle blue light"
           >
             <MenuIcon />
           </ActionButton>

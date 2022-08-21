@@ -39,6 +39,11 @@ export default styled.footer`
         width: 3rem;
         height: 3rem;
       }
+      span {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 `;
