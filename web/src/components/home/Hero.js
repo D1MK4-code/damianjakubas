@@ -18,7 +18,13 @@ function Hero() {
               className="hero-pattern-1"
             />
           </figure>
-
+          <StaticImage
+            className="hero-image"
+            src="../../images/hero.png"
+            alt="hero image"
+            placeholder="none"
+            objectPosition="50% 50%"
+          />
         </div>
         <div className="right">
           <h1>
