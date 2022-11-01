@@ -40,7 +40,7 @@ export const SinglePostStyles = styled.div`
       }
     }
     .post-author {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
   }
   h1,
@@ -76,23 +76,29 @@ export const SinglePostStyles = styled.div`
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
   h3 {
-    font-size: 2.1rem;
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.8rem
   }
   h2,
   h3,
   h4 {
-    margin: 2rem 0 3rem;
+    margin: 3rem 0 2rem;
   }
 
   .post-body {
     .gatsby-image-wrapper {
       margin: 3rem 0;
+    }
+    p + .gatsby-image-wrapper {
+      margin: 0 0 3rem;
     }
     a {
       color: var(--button);
@@ -116,7 +122,7 @@ export const SinglePostStyles = styled.div`
     }
   }
   #disqus_thread {
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
   @media (min-width: 575px) {
     .post-image {
@@ -136,7 +142,7 @@ export const SinglePostStyles = styled.div`
       font-size: 2.5rem;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 2.1rem;
     }
   }
 `;
