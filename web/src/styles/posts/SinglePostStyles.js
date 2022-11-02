@@ -94,11 +94,16 @@ export const SinglePostStyles = styled.div`
   }
 
   .post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     .gatsby-image-wrapper {
       margin: 3rem 0;
     }
     p + .gatsby-image-wrapper {
       margin: 0 0 3rem;
+      align-self: center;
     }
     a {
       color: var(--button);
@@ -119,6 +124,7 @@ export const SinglePostStyles = styled.div`
     .post-body-code {
       margin: 2rem 0 !important;
       font-size: 1.4rem;
+      width: 100px;
     }
   }
   #disqus_thread {
