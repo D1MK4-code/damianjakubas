@@ -124,7 +124,7 @@ export const SinglePostStyles = styled.div`
     .post-body-code {
       margin: 2rem 0 !important;
       font-size: 1.4rem;
-      width: 100px;
+      width: 100%;
     }
   }
   #disqus_thread {
