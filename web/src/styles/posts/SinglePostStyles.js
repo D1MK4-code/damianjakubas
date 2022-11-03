@@ -26,6 +26,7 @@ export const SinglePostStyles = styled.div`
       }
       a {
         text-decoration: none;
+        transition: all .15s ease-out;
         &:hover,
         &:focus {
           color: var(--button);
@@ -37,6 +38,11 @@ export const SinglePostStyles = styled.div`
       span {
         font-size: 1.3rem;
         color: var(--secondary);
+      }
+    }
+    .categories-text {
+      span {
+        margin-right: .4rem;
       }
     }
     .post-author {
