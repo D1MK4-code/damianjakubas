@@ -77,28 +77,25 @@ export const SinglePostStyles = styled.div`
     font-weight: 500;
   }
   p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
     text-align: justify;
   }
-
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
   }
   h2 {
-    font-size: 2.3rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.8rem
-  }
-  h2,
-  h3,
-  h4 {
+    font-size: 2.4rem;
     margin: 3rem 0 2rem;
   }
-
+  h3 {
+    font-size: .1rem;
+    margin: 2rem 0 1rem;
+  }
+  h4 {
+    font-size: 1.9rem;
+    margin: 2rem 0 1rem;
+  }
+  
   .post-body {
     display: flex;
     flex-direction: column;
@@ -132,6 +129,9 @@ export const SinglePostStyles = styled.div`
       font-size: 1.4rem;
       width: 100%;
     }
+    p + .post-body-code {
+      margin: 0 0 2rem !important;
+    }
   }
   #disqus_thread {
     margin-top: 10rem;
@@ -148,13 +148,18 @@ export const SinglePostStyles = styled.div`
       margin-bottom: 2.5rem;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.9rem;
     }
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
     }
     h3 {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
+    }
+    p,
+    a,
+    li{
+      font-size: 1.7rem;
     }
   }
 `;
