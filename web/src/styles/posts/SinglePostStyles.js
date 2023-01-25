@@ -88,7 +88,7 @@ export const SinglePostStyles = styled.div`
     margin: 3rem 0 2rem;
   }
   h3 {
-    font-size: .1rem;
+    font-size: 2.1rem;
     margin: 2rem 0 1rem;
   }
   h4 {
