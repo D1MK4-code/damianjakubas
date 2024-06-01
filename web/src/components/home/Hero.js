@@ -33,11 +33,9 @@ function Hero() {
           <Paragraph className="hero-text">
             I'm Front-end Developer, <br />
             working at{' '}
-            <a href="https://otree.tech/" target="_blank" rel="noreferrer">
-              OTree.tech
+            <a href="https://cyberfolks.pl/" target="_blank" rel="noreferrer">
+              cyber_Folks
             </a>{' '}
-            from October 2020 <br /> (almost 2 years now). <br />
-            Currently learning React
           </Paragraph>
           <Button to="/posts">Blog posts</Button>
         </div>
